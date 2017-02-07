@@ -9,12 +9,7 @@ My homeland is <%= @homeland %>
   <% end %>
 </ul>
 
-<% @countries.each do |country| %>
-  <%= image_tag pic %>
-<% end %>
-
 <% @travel_pics.each do |pic| %>
-  <%= image_tag pic %>
-<% end %>
-
+  <%= image_tag pic, image_tag photo, class: "img-responsive" %>
+  <br/>
 <% end %>
